@@ -1,0 +1,36 @@
+<section class="agenda section">
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Job</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+            {{#events}}
+                <tr>
+                    <td class="agenda-date" class="active" rowspan="{{jobs_count}}">
+                        <div class="dayofmonth">{{day_number}}</div>
+                        <div class="dayofweek">{{day_name}}</div>
+                        <div class="shortdate text-muted">{{month}}, {{year}}</div>
+                    </td>
+                </tr>
+                {{#jobs}}
+                <tr>
+                    <td class="agenda-time">
+                        {{number}}
+                    </td>
+                    <td class="agenda-events">
+                        <div class="agenda-event">
+                            {{total}}
+                        </div>
+                    </td>
+                </tr>
+                {{/jobs}}
+            {{/events}}
+            </tbody>
+        </table>
+    </div>
+</section>

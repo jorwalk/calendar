@@ -1,0 +1,18 @@
+<!-- Main jumbotron for a primary marketing message or call to action -->
+{{#status}}
+<div class="jumbotron">
+  <div class="container">
+  	
+  	{{#primary}}
+    <h1>Hello <small>{{id}}</small></h1>
+    {{/primary}}
+
+    {{^primary}}
+    <h1>Hello!</h1>
+    {{/primary}}
+
+    <p>This is intended to be a bridge between Google Calendar and Advantage Webvantage. The premise is that you have events scheduled on your calendar, and you must enter your time into webvantage.</p>
+    <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
+  </div>
+</div>
+{{/status}}

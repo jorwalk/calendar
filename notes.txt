@@ -1,0 +1,7 @@
+Calendar
+	Authorize
+Event
+	Create
+	Read
+	Update
+	Delete

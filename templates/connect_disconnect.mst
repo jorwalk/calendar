@@ -1,0 +1,11 @@
+{{#status}}
+
+{{#auth_url}}
+<a href="{{auth_url}}" class="btn btn-primary" type="submit">Connect</a>
+{{/auth_url}}
+
+{{^auth_url}}
+<button class="btn btn-success">Connected</a>
+{{/auth_url}}
+
+{{/status}}
